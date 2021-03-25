@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //////1. Swap
+        // search JS array để tìm hàm
+        // let a = 5;
+        // let b = 10;
+        // let tmp = 5;
+        // a = b;
+        // b = tmp;
+        // console.log(a);
+        // console.log(b);
+
+        ///////2. Using type conversion from String to Array
+        // const s = 'Hello beauty there';
+        // // đúng với dạng của chuỗi
+        // const a = s.split();
+        // // tùy theo yêu cầu ta sẽ đưa yêu cầu vào dấu back-stick 
+        // const a = s.split(` `);
+        // console.log(a);
+
+        // // đổi vị trí của phần tử trong mảng
+        // let arr = ['a', 'b' ,'c', 'd'];
+        // let temp = arr[0];
+        // arr [0] = arr[2];
+        // arr [2] = temp;
+        // console.log(arr);
+
+        //////.3 
+        // const a = [4, 5, 7, -8];
+        //// không xuất hiện dấu [] khi in mảng ra
+        // console.log(...a);
+        // console.log(typeof(a));
+          
+        ////// 4.
+        // let item = ['Jeans', 'T-shirt', 'Socks'];
+        // let input;
+        // while (true){
+        //     input = prompt('Hi there, welcome to shop admin panel, What do you want(C, R, U, D)?')
+
+        //     // c
+        //     if(input.toLowerCase() === 'c'){
+        //         let add = prompt('Enter the name of the new item');
+        //         let newitem = item.push(add);
+        //         alert('Done'); 
+
+        
+        //     // R
+        //     }else if(input.toLowerCase() === 'r'){
+        //         console.log('The current items are: ')
+        //         for(let i = 0; i < item.length; i++ ){
+        //             console.log(`${i + 1} .  ${item[i]}`);
+        //         }
+
+        //     // U
+        //     }else if(input.toLowerCase() === 'u'){
+        //         let up = Number(prompt('Enter the position you want to update'));
+               
+        //         if (up <= item.length ){
+        //             let newup = prompt('Enter the new name')
+        //             item[up-1] = newup;
+        //             alert(`Done`);
+        //         }else {
+        //             alert('Wrong!')
+        //             break;
+        //             console.log(item);
+        //         }
+
+        //     // D
+        //     }else if(input.toLowerCase() === 'd'){
+        //         let dele = Number(prompt('Enter the position you want to delete'));
+        //         if (dele <= item.length ){
+        //             item.splice(dele-1,1);
+        //             alert(`Done`);
+        //         }else {
+        //             alert('Wrong!')
+        //             break;
+        //         }
+        //         console.log(item);
+
+
+        //     }else{
+        //     alert('This command is not to supported')
+            
+        // }
+
+    
+
+        //// 5. Cho ng­ười dùng nhập vào một dãy số sau đó tính tổng dãy số đó
+        // //Cách 1
+        // let input = prompt('Enter your numbers: ');
+        // //tạo biến là một mảng và convert input từ string sang array
+        // let convert = input.split(`,`);
+        // //tạo biến tổng ban đầu bằng 0
+        // let sum = 0; 
+        // // sử dụng vòng lặp for để tính tổng các số người dùng nhập
+        // for (let i = 0; i < convert.length; i++){
+        // // kiểu mảng nhập vào phải là kiểu số và [i] là index của các phần tử trong mảng
+        //     sum += Number(convert[i]);
+        //     console.log(sum);
+        // }
+        // alert(`The sum of them is: ${sum}`);
+        
+        
+        // 6. Tìm giá trị nhỏ nhất, trong dãy số do người dùng nhập vào 
+        // let input = prompt(`Enter a sequence of number, separated by commas (,)`);
+        // let arr = input.split(`,`);
+        // console.log(arr);
+
+        ////// C1:
+        // let min = Math.min(...arr);
+        // alert(`The smallest number is: ${min}`);
+
+        /////c2: tìm phần tử lớn nhất trong arr
+        // let max = arr[0];
+        // for (let i = 1; i < arr.length; i++){
+        //     if (arr[i] > max){
+        //         max = arr[i];
+        //     }
+        // }
+        // alert('max =' + max );
+        
+       
+
+        // 7.
+        ////c1
+        // let index = -1;
+        // let arr = [4,5,6,7];
+        // let value = Number(prompt('Do you find number?'));
+        // // dung ham goi
+        // let check = arr.indexOf(value);
+        // alert(`${check}`)
+
+            ////c2
+        // let arr = [3, 4, 6, -9, 10, -88, 2];
+        // const input = Number(prompt('Enter number'));
+        // let index = arr.indexOf(input);
+        // if(index < 0){
+        //     alert(`Not found`);
+        // }else if (index >= 0){
+        //     alert(`${input} is ${index} `);
+        // }
+
+
+        ///// 8
+    //// 8.1
+    // let arr = [5, 7, 300, 90, 24, 50, 75];
+    // console.log('Hello my name is Nghia Tran and here is my sheep sizes: ')
+    // console.log(arr);
+
+    // ////8.2
+    // let maxSize = Math.max(...arr);
+    // console.log(`Now my biggest sheep has size ${maxSize}, let's save it `);
+    // //8.3
+    // ////tìm vị trí max trong mảng
+    // let index = arr.indexOf(maxSize);
+    // console.log(index);
+    // //gắn giá trị index tìm được bằng 8
+    // arr[index] = 8;
+    // console.log(`\nAfter shearing, here is my flock \n` + arr);
+    ////8.4
+    ////vòng lặp for từ tháng 1 đến tháng 3
+    // for(let i = 1; i <= 3; i++){
+
+    //     ////nếu những tháng đúng nhỏ hơn 3 thì
+    //     if( i < 3){
+    //         for(let j = 0; j < arr.length; j++){
+    //             arr[j] += 50;
+    //         }
+    //     console.log(`\nMOUNTH ${i} \nOne month has, passed, my sheeps have grown, here are their sizes\n ` + arr);
+
+    //     let maxSize = Math.max(...arr);
+    //     console.log(`Now my biggest sheep has size ${maxSize}, let's save it `);
+    //     let index = arr.indexOf(maxSize);
+    //     console.log(index);
+    //     arr[index] = 8;
+    //     console.log(`\nAfter shearing, here is my flock \n` + arr);
+    //     }else{
+    //         for(let j = 0; j < arr.length; j++){
+    //             arr[j] += 50;
+    //         }
+    //         console.log(`\nMOUNTH ${i} \nOne month has, passed, my sheeps have grown, here are their sizes\n ` + arr);
+    //     }
+    //     let total = 0;
+    //     for(let j = 0; j < arr.length; j++){
+    //         total += arr[j];
+    //     }
+    //     console.log(`\nMy flock has size in total: ${total}`);
+    //     console.log(`I would get: ${total} * 2$ = ` + total * 2 + `$`)
+    // }
+
+    /////10.
+    // let input = prompt("Enter a sequence of names");
+    // console.log(input);
+
+    // ////chuyen string thanh arr, cac element cach nhau boi dau ,
+    // let arr = input.split(`, `);
+    // console.log(arr);
+    
+    // ////su dung ham map
+    // let arr1 = arr.map((val, i, arr)=>{
+    //     return `<` + val + `>`
+    // });
+    // console.log(arr1);
+    // alert(arr+ `=>` + arr1);
+
+
+    // let input = prompt("Enter a sequence number");
+    // console.log(input);
+    // let arr  = input.split(`, `);
+    // let newArr = [];
+    // for(let i = 0; i < arr.length; i++){
+    //     if(Number(arr[i])%2 !==0){
+    //         newArr.push(arr[i]);
+    //     }
+    // } 
+    // console.log(newArr);
+    // alert(arr + `=>` + newArr)
+        
+    </script>
+</body>
+</html>
